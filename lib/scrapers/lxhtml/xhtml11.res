@@ -1,0 +1,19 @@
+#xmlns:xhtml="http://www.w3.org/1999/xhtml"
+xhtml:html            xhtml:prefix      URI
+xhtml:q               xhtml:cite        URI
+xhtml:blockquote      xhtml:cite        URI
+xhtml:ins             xhtml:cite        URI
+xhtml:del             xhtml:cite        URI
+xhtml:link            xhtml:href        URI
+xhtml:base            xhtml:href        URI
+xhtml:script          xhtml:src         URI
+xhtml:img             xhtml:src         URI
+xhtml:img             xhtml:longdesc    URI
+xhtml:area            xhtml:href        URI
+xhtml:object          xhtml:classid     URI
+xhtml:object          xhtml:codebase    URI
+xhtml:object          xhtml:data        URI
+xhtml:form            xhtml:action      URI
+xhtml:input           xhtml:src         URI
+xhtml:object          xhtml:archive     URILIST
+xhtml:head            xhtml:profiles    URILIST

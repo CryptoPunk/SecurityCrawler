@@ -50,7 +50,3 @@ class MySpider(scrapy.Spider):
             for resource in extractor.extract_links(response):
                 if re.match(self.scope,resource.url) is not None:
                     yield scrapy.http.Request(url=resource.url)
-        
-
-
-     

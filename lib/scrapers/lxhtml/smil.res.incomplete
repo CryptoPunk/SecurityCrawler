@@ -1,0 +1,11 @@
+#xmlns:smil="http://www.w3.org/ns/SMIL"
+smil:ref        smil:src    URI
+smil:animation  smil:src    URI
+smil:audio      smil:src    URI
+smil:img        smil:src    URI
+smil:text       smil:src    URI
+smil:textstream smil:src    URI
+smil:video      smil:src    URI
+smil:prefetch   smil:src    URI
+smil:      smil:src    URI
+

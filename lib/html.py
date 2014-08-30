@@ -1,4 +1,4 @@
-class Resource():
+class URL():
     url = None
 
     def __init__(self,url):
@@ -10,9 +10,15 @@ class Resource():
             contents = contents[:37] + "..."
         return "Resource(%s)" % contents
 
+    def __eq__(self,other):
+        return self.url == other.url
+
+    def __ne__(self,other):
+        return False == self.__eq__(other)
+
 class Form():
-    action = None
-    params = None
+    action = None # should be URL type.
+    params = None # should be a set object, keys only
     enctype = None
     method = None
 
@@ -27,3 +33,12 @@ class Form():
         if len(contents) > 40:
             contents = contents[:37] + "..."
         return "Form(%s)" % contents
+
+    def __eq__(self,other):
+        return (     self.action  == other.action 
+                 and self.params  == other.params
+                 and self.enctype == other.enctype
+                 and self.method  == other.method)
+
+    def __ne__(self,other):
+        return False == self.__eq__(other)

@@ -1,3 +1,4 @@
+*           aria-describedat    URI
 link        ref                 URI
 blockquote  cite                URI
 a           href                URI
